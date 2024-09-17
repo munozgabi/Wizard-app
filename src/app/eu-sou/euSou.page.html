@@ -1,0 +1,19 @@
+
+
+<ion-content class="auth-form" padding>
+    <div style="text-align: center; padding-top: 45%; padding-bottom: 5%;">
+      <img src="../../assets/wizard-logo.png" width="80%" alt="Logo Wizard">
+    </div>
+    <div style="text-align: center;">
+        <h1>Eu sou</h1>
+    </div>
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <ion-button [routerLink]="['/home/aluno']" expand="block" color="secondary" style="height: 65px; width: 85%; margin-left: auto; margin-right: auto; font-weight: bold;" >Aluno</ion-button>
+
+          <ion-button [routerLink]="['/home/professor']" expand="block" color="danger" style="height: 65px; width: 85%; margin-left: auto; margin-right: auto; margin-top: 10%; font-weight: bold;">Professor</ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    </ion-content>

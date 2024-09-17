@@ -1,20 +1,19 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+<ion-content class="auth-form" padding>
+<div style="text-align: center; padding-top: 45%; padding-bottom: 5%;">
+  <img src="../../assets/wizard-logo.png" width="80%" alt="Logo Wizard">
+</div>
+<div style="text-align: center;">
+    <h1>Desejo Fazer</h1>
+</div>
+<ion-grid>
+  <ion-row>
+    <ion-col>
+      <ion-button [routerLink]="['/login/'+tipoUsuario]" expand="block" color="secondary" style="height: 65px; width: 85%; margin-left: auto; margin-right: auto; font-weight: bold;" >Login</ion-button>
+
+      <ion-button [routerLink]="['/registro/'+tipoUsuario]" expand="block" color="danger" style="height: 65px; width: 85%; margin-left: auto; margin-right: auto; margin-top: 10%; font-weight: bold;">Cadastro</ion-button>
+    </ion-col>
+  </ion-row>
+</ion-grid>
 </ion-content>
