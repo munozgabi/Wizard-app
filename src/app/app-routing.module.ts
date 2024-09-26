@@ -8,6 +8,17 @@ const routes: Routes = [
     loadChildren: () => import('./eu-sou/euSou.module').then( m => m.EuSouPageModule)
   },
   {
+    //TESTE
+    path: 'inicio',
+    loadChildren: () => import('./inicio/inicio.module').then(m => m.InicioPageModule)
+  },
+  {
+    //TESTE
+    path: 'minhas-turmas',
+    loadChildren: () => import('./minhas-turmas/minhasTurmas.module').then(m => m.MinhasTurmasModule)
+  },
+  
+  {
     path: 'home/:tipoUsuario',
     loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
   },

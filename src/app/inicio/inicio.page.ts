@@ -13,8 +13,8 @@ export class InicioPage implements OnInit {
   constructor(private inicioService: InicioService) { }
 
   ngOnInit() {
-    console.log("Lista de usuários professores");
-    this.inicioService.getDados().subscribe(data => {
+      console.log("Lista de usuários professores");
+      this.inicioService.getDados().subscribe(data => {
       this.dados = data;
   });
   console.log(this.dados);
